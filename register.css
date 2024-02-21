@@ -1,0 +1,212 @@
+body{
+    background-color: white;
+    font-family: Inter;
+}
+a{
+    text-decoration: none;
+}
+#form-content{
+    float: left;
+    width: 50%;
+    display: grid;
+}
+
+form{
+    display: grid;
+    margin-left: 6em;
+    margin-top: 3em;
+    align-content: center;
+}
+
+#name,#email,#password, #submit{
+    position: relative;
+    top: -1em;
+    margin-top: 3.5em;
+    margin-left: 12em;
+    width: 25em;
+    height: 5em;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+#name,#email,#password{
+    background-color: #D9D9D9;
+    border-color:#D9D9D9;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#name::placeholder,#email::placeholder,#password::placeholder{
+    color: black;
+    font-weight: 600;
+    padding-left: 1em;
+    transition: 0.3s;
+}
+
+#name:hover::placeholder,#email:hover::placeholder,#password:hover::placeholder{
+   opacity: 0;
+}
+
+#name:focus,#email:focus, #password:focus{
+    outline: none;
+    color: black;
+}
+
+#name:focus::placeholder,#email:focus::placeholder, #password:focus::placeholder{
+    opacity: 0;
+}
+
+
+#submit:hover{
+    transform: scale(1.1);
+}
+
+#title-txt{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#para-title-txt{
+    position: relative;
+    top: -2.5em;
+    color: #909090;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#para-title-txt-span{
+    color: black;
+}
+
+#footer-txt-left{
+    font-size: 9px;
+    margin-top: 20em;
+    color: #909090;
+    font-weight: 600;
+}
+
+#footer-txt-left-span{
+    color: black;
+}
+
+#img-content{
+    float: right;
+    position: absolute;
+    width: 44.5vw;
+    height: 100vh;
+    left: 50em;
+    top: -1px;
+    width: 50%;
+    background-color: #D9D9D9;
+}
+
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#first-c{
+    clear: both;
+    left: 24em;
+    background-color: white;
+}
+
+#second-c{
+    background-color: white;
+    left: 2em;
+    top: 3em;
+}
+
+#third-c{
+    background-color: white;
+    left: 15em;
+    top: 7em;
+}
+
+#forth-c{
+    background-color: black;
+    left: 30em;
+    top: 8em;
+}
+
+#fifth-c{
+    background-color: black;
+    left: 6em;
+    top: 15em;
+}
+
+#sixth-c{
+    background-color: white;
+    left: 2em;
+    top: 24em;
+}
+
+#seventh-c{
+    background-color: white;
+    left: 10em;
+    top: 30em;
+}
+
+#eighth-c{
+    background-color: white;
+    left: 1em;
+    top: 36em;
+}
+
+#nineth-c{
+    background-color: black;
+    left: 15em;
+    top: 22em;
+}
+
+#tenth-c{
+    background-color: white;
+    left: 23em;
+    top: 16em;
+}
+
+#eleventh-c{
+    background-color: black;
+    left: 26em;
+    top: 29em;
+}
+
+#twelevth-c{
+    background-color: black;
+    left: 17em;
+    top: 39em;
+}
+
+#thirteen-c{
+    background-color: white;
+    left: 30em;
+    top: 39em;
+}
+
+#forteen-c{
+    background-color: white;
+    left: 32em;
+    top: 22em;
+}
+
+#footer-txt-right{
+    margin-top: 84.5em;
+    margin-left: 40em;
+    font-size: 9px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+#footer-txt-right-span{
+    color: black;
+}
+
+
+
