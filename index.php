@@ -24,7 +24,7 @@
     
         </div>
         
-        <button onclick = "window.location.href= 'register.html'" style= "border: 0px; background-color: rgba(2, 0, 0, 0.643); color: white; border-radius: 10px; font-size: 18px; box-shadow: 1px 5px 10px rgba(131, 255, 7, 0.52); "> JOIN US TODAY <img src= "Images/next.png" style="width: 13px; height: 13px; " ></button>
+        <button onclick = "window.location.href= 'register.html'" style= "border: 0px; background-color: rgba(2, 0, 0, 0.643); color: white; border-radius: 50px; font-size: 18px; box-shadow: 1px 5px 10px rgba(131, 255, 7, 0.52); "> JOIN US TODAY <img src= "Images/next.png" style="width: 13px; height: 13px; " ></button>
     </div>
 </div>  
 

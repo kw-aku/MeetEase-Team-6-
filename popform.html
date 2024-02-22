@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../MeetEase/css/meetease.css">
+    <title>Register</title>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+</head>
+
+<body style= "text-align: center; padding-bottom: 30px; margin: 100px; padding-top: 70px;" >
+
+
+<div style= "border: 5px solid black; padding-bottom: 20px; border-radius: 10px; position: fixed; left: 490px; box-shadow: 0px 1px 400px rgba(0, 0, 0, 0.672); ">
+    <div style= " text-align: center;">
+        <h1>Create Meeting!</h1>
+    </div>
+
+    <!--I have not written the regex expressions yet-->
+    <div style= "padding: 30px; ">
+      <form method= "post" action= "" name= "register_form" id= "register_form"> 
+        <label>Description</label><br>
+        <input type= "text" name= "description" id= "description"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+
+        <label>Date</label><br>
+        <input type= "date" name= "last_name" id= "last_name" placeholder= "Last Name" required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+
+        <label>Start Time</label><br>
+        <input type= "time" name= "Start Time" id= "start_time"  required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+
+        <label>End Time</label><br>
+        <input type= "time"  name= "end_time" required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+
+
+        <input type= "submit" value= "Create Account" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: rgba(0, 0, 0, 0.778); color:rgba(255, 255, 255, 0.873)">
+      </form> 
+
+    </div>
+</div>
+    
+    
+
+</body>

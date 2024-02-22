@@ -36,4 +36,15 @@ td {
     
 }
 
+.popup-style {
+    width: 441px;
+    height: 52px; 
+    border-radius: 10px;
+    border: solid black;
+    text-align: center;
+    
+}
 
+label {
+    text-align: left;
+}
