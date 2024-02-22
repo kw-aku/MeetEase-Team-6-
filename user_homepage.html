@@ -72,7 +72,7 @@
         </div>
     
         <!--I have not written the regex expressions yet-->
-        <div style= "padding: 30px;" >
+        <div style= "padding-right: 30px; padding-left: 30px;" >
           <form method= "post" action= "" name= "register_form" id= "register_form"> 
             <label>Description</label><br>
             <input type= "text" name= "description" id= "description"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
@@ -87,7 +87,8 @@
             <input type= "time"  name= "end_time" required style= "width: 139px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
     
     
-            <input onclick= "hidePopUp_Submit()" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: rgba(0, 0, 0, 0.778); color:rgba(255, 255, 255, 0.873)">
+            <input onclick= "hidePopUp_Submit()" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: rgba(0, 0, 0, 0.778); color:rgba(255, 255, 255, 0.873)"><br><br>
+            <button onclick= "hidePopUp_Cancel()" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: rgba(78, 7, 7, 0.76); color:rgba(255, 255, 255, 0.873)" >Cancel</button>
           </form> 
     
         </div>
@@ -105,6 +106,13 @@
         divId.style.display = "block";}
     }
     
+    function hidePopUp_Cancel(){
+        var divId = document.getElementById("popup");
+        
+        if (divId.style.display === "block" ) {
+        divId.style.display = "none";}
+    }
+
     function hidePopUp_Submit(){
         var divId = document.getElementById("popup");
         
