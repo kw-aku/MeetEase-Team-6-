@@ -8,7 +8,16 @@ button {
 
 }
 
-.centre text {
-    text-align: center;
+#menubuttons {
+    margin: 0; 
+    padding: 0; 
+    font-size: 28px;
+    border: 0px; 
+    background-color: rgba(2, 0, 0, 0.643); 
+    color: white; 
+    font-size: 18px; 
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.851);
+
+
 
 }
