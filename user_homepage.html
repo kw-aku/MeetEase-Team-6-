@@ -10,12 +10,13 @@
 </head >
 
 <body class= "no-margin">
+<!--Rectangle at the left housing meet and logout-->
    <div class= "no-margin">
     <div style= " border: 1px solid black; padding-bottom: 100dvh ;padding-right: 300px; border-radius: 10px; border-top-left-radius: 0; background-color: rgb(0, 0, 0);position: fixed;">    
 
     </div>
 </div> 
-
+<!--Meet Ease text-->
 <div class="no-margin" style="position: fixed; top:40px; left:80px;">
     <p class="no-margin" style=" font-size: 28px; color:white"><a href="user_homepage.html" style="color: white; text-decoration: none; ">MeetEase</a></p>
 </div>
@@ -25,18 +26,22 @@
 </div>
 
 <br><br>
+<!--Dashboard title-->
 <div style= "padding-right: 900px; " class= "centre-content" >
     <h1 class="no-margin">Dashboard</h1>
 </div>
 <br><br>
 
+<!--create button-->
 <div class= "centre-content"style= "padding-left: 1100px; ">
     <button style="background-color: white; border: 2px solid black; width: 105px; height: 29px; font-size: 12px; border-radius: 10px; " >Create</button>
 
 </div>
 
 <br><br><br><br><br>
-
+<!--table commented. we will need to use AJAX to update the table-->
+<!--when we find a way to use AJAX then the table comment can be ended-->
+<!--table comment start-->
 <div class= "centre-content">
     <table  border= 1 >
         <tr>
@@ -45,7 +50,7 @@
             <th>Time</th>
             <th>Actions</th>
         </tr>
-        <div>
+        <div id="meetings" name="meetings">
         <tr>
             <td>0409</td>
             <td>A Demo description</td>
@@ -56,6 +61,7 @@
         
     </table>
 </div>
+<!--table comment end-->
 
 <br>
 <div id="meeting" name= "meeting" class= "centre-content">
