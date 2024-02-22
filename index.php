@@ -16,7 +16,7 @@
 
 <body>
 <!--Left content-->
-<div style = "padding-right: 500px; padding-top: 80px;"> 
+<div style = "padding-right: 500px; padding-top: 80px; position: fixed;"> 
     <div style= "padding: 100px; border: 10px solid black; border-left: 0px; border-radius: 50px">
         <p style = "font-size: 60px;">Welcome to MeetEase <br>Where meeting is made convenient</p>
         <div>
