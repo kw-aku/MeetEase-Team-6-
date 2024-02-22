@@ -49,3 +49,31 @@ label {
     text-align: left;
 }
 
+#cancel-btn{
+    position: absolute;
+    margin: 10px;
+    font-size: 30px;
+    left: 15.4em;
+    top: 0em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#cancel-btn:hover{
+    transform: scale(1.1);
+    color: rgba(231, 13, 13, 0.633);
+    
+}
+
+#submit-btn {
+    cursor: pointer;
+    transition: .5s;
+}
+
+#submit-btn:hover{
+    transform: scale(1.01);
+
+}
+
+
+
