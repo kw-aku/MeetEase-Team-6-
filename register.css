@@ -18,18 +18,30 @@ form{
     align-content: center;
 }
 
-#name,#email,#password, #submit{
+#input-content{
+    display: flex; 
+}
+
+#content-one, #content-two{
+    display: grid;
+}
+
+#fname,#lname,#email,#password, #submit{
     position: relative;
     top: -1em;
-    margin-top: 3.5em;
-    margin-left: 12em;
+    margin-top: 6em;
+    margin-left: 1em;
     width: 25em;
     height: 5em;
     border-radius: 8px;
     border: 1px solid;
 }
 
-#name,#email,#password{
+#submit{
+    margin-left: 14em;
+}
+
+#fname,#lname,#email,#password{
     background-color: #D9D9D9;
     border-color:#D9D9D9;
 }
@@ -41,23 +53,23 @@ form{
     cursor: pointer;
 }
 
-#name::placeholder,#email::placeholder,#password::placeholder{
+#fname::placeholder,#lname::placeholder,#email::placeholder,#password::placeholder{
     color: black;
     font-weight: 600;
     padding-left: 1em;
     transition: 0.3s;
 }
 
-#name:hover::placeholder,#email:hover::placeholder,#password:hover::placeholder{
+#fname:hover::placeholder,#lname:hover::placeholder,#email:hover::placeholder,#password:hover::placeholder{
    opacity: 0;
 }
 
-#name:focus,#email:focus, #password:focus{
+#fname:focus,#lname:focus,#email:focus, #password:focus{
     outline: none;
     color: black;
 }
 
-#name:focus::placeholder,#email:focus::placeholder, #password:focus::placeholder{
+#fname:focus::placeholder,#lname:focus::placeholder,#email:focus::placeholder, #password:focus::placeholder{
     opacity: 0;
 }
 
@@ -80,17 +92,6 @@ form{
 }
 
 #para-title-txt-span{
-    color: black;
-}
-
-#footer-txt-left{
-    font-size: 9px;
-    margin-top: 20em;
-    color: #909090;
-    font-weight: 600;
-}
-
-#footer-txt-left-span{
     color: black;
 }
 
@@ -196,8 +197,19 @@ form{
     top: 22em;
 }
 
+#footer-txt-left{
+    font-size: 9px;
+    margin-top: 21em;
+    color: #909090;
+    font-weight: 600;
+}
+
+#footer-txt-left-span{
+    color: black;
+}
+
 #footer-txt-right{
-    margin-top: 84.5em;
+    margin-top: 85em;
     margin-left: 40em;
     font-size: 9px;
     font-weight: 600;
@@ -207,6 +219,8 @@ form{
 #footer-txt-right-span{
     color: black;
 }
+
+
 
 
 
