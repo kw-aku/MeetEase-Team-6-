@@ -6,7 +6,9 @@
 -- Generation Time: Feb 22, 2024 at 04:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
-
+DROP Database if exists meeteasy;
+Create database meeteasy;
+Use meeteasy;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
