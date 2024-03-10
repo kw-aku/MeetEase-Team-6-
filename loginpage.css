@@ -1,0 +1,130 @@
+body{
+    background-color: white;
+    font-family: Inter;
+}
+a{
+    text-decoration: none;
+}
+#content-container{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 3.5em;
+    margin-top: 2.5em;
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#form-content{
+    display: grid;
+    margin-left: 5em;
+    margin-top: 5em;
+    float: left;
+    width: 30%;
+}
+
+form{
+    display: grid;
+    width: 80em;
+}
+
+#email, #password, #submit{
+    position: relative;
+    top: -5em;
+    margin-top: 5em;
+    height: 4.5em;
+    width: 26em;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+}
+
+#email, #password{
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+}
+
+#email::placeholder, #password::placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 2em; 
+    transition:0.3s;   
+}
+
+#email:hover::placeholder, #password:hover::placeholder{
+    opacity: 0;
+}
+
+#email:focus, #password:focus{
+    outline: none;
+    color: black;
+}
+
+#email:focus::placeholder, #password:focus::placeholder{
+    opacity: 0;
+}
+
+#submit{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+}
+
+
+#txt{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#para-title-txt{
+    position: relative;
+    top: -4em;
+    font-size: 10px;
+    color: #909090;
+    font-weight: 700;
+}
+
+
+#footer-txt-left{
+    position: relative;
+    color: #909090;
+    font-size: 9px;
+    font-weight: 700;
+    top: 9.5em;
+}
+
+#footer-txt-left-span{
+    color: black;
+}
+
+#image-content{
+    float: right;
+    width: 70%;
+}
+
+#icon{
+    position: absolute;
+    width: 35em;
+    height: 35em;
+    bottom: 10em;
+    left: 40em;
+}
+
+#footer-txt-right{
+    position: relative;
+    color: #909090;
+    font-size: 9px;
+    font-weight: 700;
+    top: 6.5em;
+    left: 70em;
+}
+
+#footer-txt-right-span{
+    color: black;
+}
+
