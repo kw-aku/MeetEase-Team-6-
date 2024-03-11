@@ -1,0 +1,99 @@
+body{
+    font-family: "Inter";
+    margin: 0;
+}
+
+#left-side-content{
+    float: left;
+    width: 23%;
+    height: 100vh;
+    background-color: black;
+}
+
+#team-logo, #logout-btn{
+    color: white;
+    padding-left: 2em;
+    margin-top: 2em;
+    font-weight: 700;
+}
+
+#logout-btn{
+    margin-top: 45em;
+    transition: .3s;
+    padding-left: 4em;
+    cursor: pointer;
+}
+
+#logout-btn:hover{
+    transform: scale(1.1);
+}
+
+#right-side-content{
+    float: right;
+    width: 77%;
+}
+
+#create-btn{
+    width: 6em;
+    margin-top: 5em;
+    margin-left: 80em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: inherit;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#create-btn:hover{
+    transform: scale(1.1);
+
+}
+
+#meeting-content{
+    margin-left: 5em;
+    border: 1px solid black;
+    width: 30em;
+    height: 20em;
+    border-radius: 10px;
+}
+
+#close-btn{
+    position: absolute;
+    margin: 0;
+    margin-bottom: 5em;
+    margin-left: 18.8em;
+    font-size: 24px;
+}
+
+#title{
+    margin-top: 2em;
+    margin-left: 5em;
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#desc{
+    margin-top: 5em;
+    margin-left: 1em;
+    width: 40em;
+    border: 1px solid black;
+}
+
+.cancel-btn{
+    position: absolute;
+    font-size: 30px;
+    left: 38.4em;
+    top: 100px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
