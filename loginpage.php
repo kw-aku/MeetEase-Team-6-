@@ -15,9 +15,9 @@
             <form action= "login_action" method= "post">
                 <p class="Inter" id="txt"> Welcome Back! </p>
                 <p class="Inter" id="para-title-txt"> Please login into your account </p>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <input type="submit" id="submit" value="Login">
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="password" id="password" placeholder="Password" name="password" required>
+                <input type="submit" id="submit" name="submit" value="Login">
                 <p id="footer-txt-left">Do you have an account yet?&nbsp&nbsp
                     <a href="register.html"><span id="footer-txt-left-span">Create one Now!</span></a></p>
             </form>
