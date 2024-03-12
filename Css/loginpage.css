@@ -1,7 +1,7 @@
 body{
     background-color: white;
     font-family: Inter;
-    display: flex;
+    
 }
 a{
     text-decoration: none;
@@ -128,39 +128,9 @@ form{
 #footer-txt-right-span{
     color: black;
 }
-div {
-    border: 2px solid #2ecc71;
-    margin-left: 6px;
-}
 
-@media screen and (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-}
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-}
 
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-@media screen and (max-width: 480px) {
-    div {
-        width: 100%;
-    }
-}
 
