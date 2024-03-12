@@ -35,7 +35,7 @@
                         <!--cancel button-->
                         <p class="cancel-btn" onclick="hidePopUp_Cancel()" >&times</p>
                     </div>
-                    <form method= "post" action= "" name= "register_form" id= "register_form"> 
+                    <form method= "post" action= "meeting_action.php" name= "register_form" id= "register_form"> 
 
                     <label>Title</label><br>
                     <input type= "text" name= "meeting_title" id= "meeting_title"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
