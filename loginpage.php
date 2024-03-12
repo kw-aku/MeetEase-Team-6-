@@ -12,7 +12,7 @@
 <body>
     <div id="content-container">
         <div id="form-content">
-            <form >
+            <form action= "login_action" method= "post">
                 <p class="Inter" id="txt"> Welcome Back! </p>
                 <p class="Inter" id="para-title-txt"> Please login into your account </p>
                 <input type="email" id="email" placeholder="Email" required>
