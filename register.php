@@ -12,14 +12,14 @@
 <body>
     <div id="content-container">
         <div id="form-content">
-            <form action="">
+            <form action="register_action.php" method="post" name= "register_form" id= "register_form">
                 <p id="title-txt">Create your account today!</p>
                 <p id="para-title-txt"> Start your first scheduled meeting with
                     <span id="para-title-txt-span"> Us!</span> </p>
                 <div id="input-content">
                     <div id="content-one">
                         <input type="text" id="fname" placeholder="First Name" name="fname" required>
-                        <input type="text" id="lname" placeholder="Last Name" name="lname" required>
+                        <input type="text" id="lname" placeholder="Last Name"  name="lname" required>
                     </div>
     
                     <div id="content-two">
@@ -27,7 +27,7 @@
                         <input type="password" id="password" placeholder="Password" name="password" required>
                     </div>
                 </div>
-                <a href="../user_homepage.html"><input type="submit" id="submit" value="Join Us"></a>
+              <input type="submit" id="submit" name="submit_button" value="Join Us">
                 <p id="footer-txt-left"> Got questions?&nbsp&nbsp<span id="footer-txt-left-span">meetease@almost247.co.gh</span> </p>
             </form>
         </div>
