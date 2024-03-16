@@ -1,13 +1,11 @@
 <?php
 //include connections
 include "connections.php";
+include "login_action.php";
 global $conn;
-$title;
-$description;
-$date; 
-$start_time; 
-$end_time;
-$venue;
+session_start();
+$user_id = $_SESSION['user_id'];
+
 
 //collecting user inputs
 if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking if the submit button has been clicked
@@ -20,12 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking if the submit button has 
     $end_time = mysqli_real_escape_string($conn, $_POST['end_time']);
       
     //sql query
-    $sql = "INSERT INTO meeting (title, user_id, `desc`, date, stime, etime, venue) VALUES (?, 5, ?, ?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssss", $title, $description, $date, $start_time, $end_time, $venue);
+    $sql = "INSERT INTO meeting (title, user_id, `desc`, date, stime, etime, venue) VALUES ( $title,$user_id, $description, $date, $start_time, $end_time, $venue);";
+    $result = mysqli_query($conn, $emailQuery);
     
     //checking if execution executes
-    if ($stmt->execute()) { 
+    if ($result) { 
         echo "<script>alert('Meeting Added');</script>";
         header("Location: user_homepage.php");//redirecting to user_homepage.php
     } else {

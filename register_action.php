@@ -1,7 +1,8 @@
 <?php
-include("connection.php");
+include ("connections.php");
 
-if (isset($_POST['submit'])) {
+global $conn;
+if (isset($_POST['submit_button'])) {
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -9,12 +10,12 @@ if (isset($_POST['submit'])) {
     
     $hashpass = password_hash($password, PASSWORD_BCRYPT);
     
-    $sql = "INSERT INTO user (fname, lname, email, password) VALUES ('$fname', '$lname', '$email', '$hashpass')";
-    $result = $conn-> query($sql);
+    $sql = "INSERT INTO user (fname, lname, email, password, role_id) VALUES ('$fname', '$lname', '$email', '$hashpass',2)";
+    $result = $conn->query($sql); 
     
     if ($result) {
         echo "<script>alert('Registered Successfully');</script>";
-        echo "<script>window.location.href = 'loginpage.php';</script>";
+        header("Location: loginpage.php");
     } else {
         echo "<script>alert('Registration Failed');</script>";
         echo "<script>window.location.href = 'register.html';</script>";
@@ -22,5 +23,5 @@ if (isset($_POST['submit'])) {
 } else {
     echo "Something went wrong";
 }
-?>
+
 
