@@ -33,8 +33,8 @@ CREATE TABLE `meeting` (
   `id` int(11) NOT NULL,
   `title` varchar(50) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `desc` varchar(200) NOT NULL,
-  `date` date NOT NULL,
+  `desc_meeting` varchar(200) NOT NULL,
+  `datemade` date NOT NULL,
   `stime` time NOT NULL,
   `etime` time NOT NULL,
   `venue` varchar(50) NOT NULL
@@ -151,9 +151,9 @@ ALTER TABLE `notification`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `participants`
+-- AUTO_INCREMENT for table `meeting`
 --
-ALTER TABLE `participants`
+ALTER TABLE `meeting`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
