@@ -4,16 +4,13 @@ session_start();
 include "connections.php";
 global $conn;
 
-
-if (isset($_POST['submit_button'])) {
+if (isset($_POST['submit'])) {
     //Collecting form data and storing in variables
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
+
     
     
-
-   
-
 
 //query to select record from people table using email
     $emailQuery = "SELECT * FROM user WHERE email = '$email'";
@@ -46,7 +43,6 @@ if (isset($_POST['submit_button'])) {
 
             $_SESSION['user_id'] = $user_id;
             
-
 
             header("Location: homepage.php");
             exit();
