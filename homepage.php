@@ -9,79 +9,64 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!---->
         <title>Home Page</title>  
     </head >
-
     <body >
 
         <div id="left-side-content">
             <p id="team-logo">[ ] MeetEase</p>
-            <p id="logout-btn">Logout &#8617 </p>
+            <a href="loginpage.php"><p id="logout-btn">Logout &#8617 </p></a>
         </div>
         
         <div id="right-side-content; " >
-            <button onclick="showPopUp()" type="button" id="create-btn" style= "border-radius: 7px;">Create &#43</button>
+            <button onclick="showPopUp()" type="button" id="create-btn" style= "border-radius: 7px;">Create &#43</button><br><br>
             
-        
-
-            <!-- <form id="meeting-content" action="">
-                <p id="close-btn">&times</p>
-                <input type="text" id="title" name="title" placeholder="Title" ><br>
-                <input type="date" id="date" name="date" placeholder="Date"><br>
-                <input type="time" id="start-time" name="start-time" placeholder="Start Time"><br>
-                <input type="time" id="end-time" name="end-time" placeholder="End Time"><br>
-                <input type="text" id="desc" name="desc" placeholder="Description">
-            </form> -->
-            <div id= #meeting_align>
-            <div name="meeting_table" id="meeting_table">
-            <table>
-                <!--table head-->
+            <table style="z-index: -1;"> <!--bring to back-->
                 <thead>
-                <tr>
-                <th>Meeting Title</th>
-                <th>Meeting Description</th>
-                <th>Meeting Date</th>
-                <th>Start Time</th>
-                <th>End Time</th>
-                <th>Action</th>
-                </tr>
+                    <tr>
+                        <th>Title</th>
+                        <th>Venue</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
-                <!--table head end-->
-                <tr>
-                <td>Meeting Title</td>
-                <td>Meeting Dejksjvksdfgbj kjvbkdbhjsjkbf jsbfjhsksbnfksjnfsjs jfsrfgsbygjsdfhnshjkgshcription</td>
-                <td>27th March 2022</td>
-                <td>6:50:00</td>
-                <td>7:50:00</td>
-                <td>Action</td>
-                </tr>
-
-                <tr>
-                <td>Title</td>
-                <td>Description</td>
-                <td>27th March 2024</td>
-                <td>17:50:00</td>
-                <td>18:50:00</td>
-                <td>Action</td>
-                </tr>
-                <tr>
-                <td>Meeting Title</td>
-                <td>Meeting Description</td>
-                <td>27th March 2022</td>
-                <td>6:50:00</td>
-                <td>7:50:00</td>
-                <td>Action</td>
-                </tr>
+                <tbody>
+                    <?php
+                        include ("view_meetings_fxn.php");
+                        // looping through meetings using id
+                        foreach ($meetings as $id => $meeting){
+                            $title = $meeting['title'];
+                            $venue = $meeting['venue'];
+                            $stime = $meeting['stime'];
+                            $etime = $meeting['etime'];
+                            echo "<tr>";
+                                echo "<td id='echo $id'>";
+                                    echo "$title";
+                                echo "</td>";
+                                echo "<td id='echo $id'>";
+                                    echo "$venue";
+                                echo "</td>";
+                                echo "<td id='echo $id'>";
+                                    echo "$stime";
+                                echo "</td>";
+                                echo "<td id='echo $id'>";
+                                    echo "$etime";
+                                echo "</td>";
+                                echo "<td>";
+                                    echo "<a href='delete_meetings_action.php?id=$id' style='text-decoration: none; color:black;'>
+                                        <span style='cursor:pointer;'>&times</span></a>&nbsp&nbsp&nbsp&nbsp<span id='update' data-meeting-id='$id' onclick='showPopUpUpdate(this)' style='cursor:pointer;'>update</span>";
+                                echo "</td>";
+                            echo "</tr>";
+                        }
+                    ?>
+                </tbody>
             </table>
-        </div>  
-</div>
-
 
         
-       
 
-            <div id="form_container" style=" margin-left: 250px; background-color:rgba(255, 255, 255); top: 90px;"  >
 
+
+            <div id="form_container" style=" margin-left: 33em; background-color:rgba(255, 255, 255); top: 90px;"  >
               <div id= "popup"style= "text-align: center; display: none; border:2px solid black ; border-radius:14px; box-shadow: 0px 0px 100dvw 10px;  0px text-align: center; padding-right: 70px; padding-left: 70px; padding-top:30px;"; > 
-                
                     <div style= " text-align: center;">
                         <h1>Create Meeting!</h1>
                         <!--cancel button-->
@@ -114,24 +99,33 @@
               
                       <input  id= "submit-btn" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: black; color:rgba(255, 255, 255, 0.873)"><br><br>
                     </form> 
-              
-                  </div>
-
+                </div>
             </div>
+            <!--form end for creating meetings-->
+
+            <!--form for updating-->
+            
+            <form id="formUpdate" action="update_meetings_action.php" method="post" style="display:none; position:relative; width: 30em; height:15em; border:2px solid black; 
+                background-color:white; left: 30em;"> 
+                <p  onclick="hidePopUpUpdate_Cancel()" style="position:absolute; left: 16em; font-size:26px; cursor:pointer;">&times</p>
+               
+                <input type="hidden" id="hidden-element" name="id">
+
+                <input type="time" id="start_time" name="start_time" style="position:relative; width: 10em; height: 52px; 
+                border-radius: 10px; border: solid black; right: 20em; top:5em;">
+
+                <input type="time" id="end_time" name="end_time" style="position:relative; width: 10em; height: 52px; 
+                border-radius: 10px; border: solid black; right: 5em; bottom:.5em;">
+
+                <input type="submit" name="submit" id="submit" value="Submit" style="position:relative; width: 10em; 
+                height: 52px; border-radius: 10px; border: solid black; right: 10em; top:2em;">
+            </form>
+            
+             
+
 
             
-
-
-            </div>
             
-            <!--form end-->
-
-
-            
-
-
-    
-     
     </body>
 
     <!--function for popup-->
@@ -151,11 +145,31 @@
             divId.style.display = "none";}
         }
 
-    
+        function showPopUpUpdate(clickedElement){
+            // alert(id);
+            var meetingId = clickedElement.dataset.meetingId;
+            var divId = document.getElementById("formUpdate");
+            document.getElementById("hidden-element").value = meetingId;
+            if (divId.style.display === "none") {
+            divId.style.display = "block";}  
+        }
 
+        function hidePopUpUpdate_Cancel(){
+            var divId = document.getElementById("formUpdate");
+            if (divId.style.display === "block" ) {
+            divId.style.display = "none";}
+        }
 
+        
+        
 
-     
+        
+
+        // function deleteRecord(id){
+        //     var meetingID = document.getElementById(id).innerHTML;
+        //     // alert(choreID);
+        //     window.location.href = 'delete_action.php?id=' + meetingID; 
+        // }
 
     </script>
 </html>
