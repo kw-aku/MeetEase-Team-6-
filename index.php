@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="css/text" rel="stylesheet" href="in.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!---->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--for the font Inter-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!---->
@@ -12,7 +11,7 @@
 <body>
     <div id="nav-bar">
         <p id="team-logo">[ ] MeetEase</p>
-        <a href="loginpage.html"><p id="login-btn">Login</p></a>
+        <a href="loginpage.php"><p id="login-btn">Login</p></a>
     </div>
 
     <div id="txt-content">
@@ -29,12 +28,12 @@
             connecting with people a breeze</p>
 
 
-        <a href="register.html"><p id="txt"> Start Now -> </p></a>
+        <a href="register.php"><p id="txt"> Start Now -> </p></a>
         
     </div>
 
     <div id="img-content">
-        <img src="./assests/teams-teamwork-to-assemble-a-working-puzzle-transformed.png"
+        <img src="./Assets/teams-teamwork-to-assemble-a-working-puzzle-transformed.png"
              alt="people holding pieces of jigsaw puzzle"/>
     </div>
 </body>
