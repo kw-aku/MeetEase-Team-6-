@@ -16,8 +16,8 @@
             <p id="team-logo">[ ] MeetEase</p>
             <p id="logout-btn">Logout &#8617 </p>
         </div>
-
-        <div id="right-side-content">
+        
+        <div id="right-side-content; " >
             <button onclick="showPopUp()" type="button" id="create-btn" style= "border-radius: 7px;">Create &#43</button>
             
         
@@ -30,18 +30,20 @@
                 <input type="time" id="end-time" name="end-time" placeholder="End Time"><br>
                 <input type="text" id="desc" name="desc" placeholder="Description">
             </form> -->
-            
+            <div id= #meeting_align>
             <div name="meeting_table" id="meeting_table">
             <table>
                 <!--table head-->
+                <thead>
                 <tr>
-                <td>Meeting Title</td>
-                <td>Meeting Description</td>
-                <td>Meeting Date</td>
-                <td>Start Time</td>
-                <td>End Time</td>
-                <td>Action</td>
+                <th>Meeting Title</th>
+                <th>Meeting Description</th>
+                <th>Meeting Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Action</th>
                 </tr>
+                </thead>
                 <!--table head end-->
                 <tr>
                 <td>Meeting Title</td>
@@ -70,6 +72,7 @@
                 </tr>
             </table>
         </div>  
+</div>
 
 
         
