@@ -12,7 +12,7 @@
 <body>
     <div id="content-container">
         <div id="form-content">
-            <form action="register_action.php" method="post" name= "register_form" id= "register_form">
+            <form action="register_action.php" method="POST" name= "register_form" id= "register_form">
                 <p id="title-txt">Create your account today!</p>
                 <p id="para-title-txt"> Start your first scheduled meeting with
                     <span id="para-title-txt-span"> Us!</span> </p>
@@ -48,7 +48,7 @@
             <p class="circle" id="thirteen-c"></p>
             <p class="circle" id="forteen-c"></p>
             <p id="footer-txt-right">Already have an account yet?&nbsp&nbsp
-                <a href="loginpage.html"><span id="footer-txt-right-span">Login here!</span></a></p>
+                <a href="loginpage.php"><span id="footer-txt-right-span">Login here!</span></a></p>
         </div>
     </div>
 </body>
