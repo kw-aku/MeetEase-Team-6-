@@ -1,11 +1,17 @@
 body{
     font-family: "Inter";
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+input:hover{
+    cursor: pointer;
+}
+
 
 #left-side-content{
     float: left;
-    width: 23%;
+    width: 20%;
     height: 100vh;
     background-color: black;
 }
@@ -18,7 +24,7 @@ body{
 }
 
 #logout-btn{
-    margin-top: 45em;
+    margin-top: 80dvh;
     transition: .3s;
     padding-left: 4em;
     cursor: pointer;
@@ -84,11 +90,61 @@ body{
 .cancel-btn{
     position: absolute;
     font-size: 30px;
-    left: 38.4em;
-    top: 100px;
+    left: 550px;
+    top: 24px;
     cursor: pointer;
     transition: .3s;
 }
+
+#form_container{
+    position: absolute;
+    top: 100%;
+}
+
+.transparency {
+    background-color: rgba(249, 249, 249, 0.448);
+}
+
+
+
+/*css for the table*/
+table {
+    border-radius: 7px;
+    text-align: center; 
+    
+}
+
+td{
+    
+    padding: 20px;
+    max-width: 250px;
+    overflow: auto; 
+    max-height: 50px;
+    white-space: nowrap;
+    background-color: rgb(217,217,217,0.700);
+}
+
+tr{
+    border: 2px;
+
+}
+
+td,table {
+    
+    border-radius: 7px;
+    
+    border: 2px solid black;
+    
+    
+}
+
+#meeting_table {
+    margin-left: 100px;
+    margin-top: 10dvh;
+
+}
+
+
 
 
 

@@ -10,7 +10,8 @@
         <title>Home Page</title>  
     </head >
 
-    <body>
+    <body >
+
         <div id="left-side-content">
             <p id="team-logo">[ ] MeetEase</p>
             <p id="logout-btn">Logout &#8617 </p>
@@ -18,6 +19,8 @@
 
         <div id="right-side-content">
             <button onclick="showPopUp()" type="button" id="create-btn" style= "border-radius: 7px;">Create &#43</button>
+            
+        
 
             <!-- <form id="meeting-content" action="">
                 <p id="close-btn">&times</p>
@@ -27,9 +30,55 @@
                 <input type="time" id="end-time" name="end-time" placeholder="End Time"><br>
                 <input type="text" id="desc" name="desc" placeholder="Description">
             </form> -->
-            <div style="padding-right:300px; padding-left:300px;" >
-            <div id= "popup"style= "text-align: center; marngin-right: 0px; display: none; border:3px solid black ; border-radius:14px; box-shadow: 0px 0px 2dvw 0px ;  " > 
-                <div style= "padding-right: 30px; padding-left: 30px; padding-top:30px; " >
+            
+            <div name="meeting_table" id="meeting_table">
+            <table>
+                <!--table head-->
+                <tr>
+                <td>Meeting Title</td>
+                <td>Meeting Description</td>
+                <td>Meeting Date</td>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Action</td>
+                </tr>
+                <!--table head end-->
+                <tr>
+                <td>Meeting Title</td>
+                <td>Meeting Dejksjvksdfgbj kjvbkdbhjsjkbf jsbfjhsksbnfksjnfsjs jfsrfgsbygjsdfhnshjkgshcription</td>
+                <td>27th March 2022</td>
+                <td>6:50:00</td>
+                <td>7:50:00</td>
+                <td>Action</td>
+                </tr>
+
+                <tr>
+                <td>Title</td>
+                <td>Description</td>
+                <td>27th March 2024</td>
+                <td>17:50:00</td>
+                <td>18:50:00</td>
+                <td>Action</td>
+                </tr>
+                <tr>
+                <td>Meeting Title</td>
+                <td>Meeting Description</td>
+                <td>27th March 2022</td>
+                <td>6:50:00</td>
+                <td>7:50:00</td>
+                <td>Action</td>
+                </tr>
+            </table>
+        </div>  
+
+
+        
+       
+
+            <div id="form_container" style=" margin-left: 250px; background-color:rgba(255, 255, 255); top: 90px;"  >
+
+              <div id= "popup"style= "text-align: center; display: none; border:2px solid black ; border-radius:14px; box-shadow: 0px 0px 100dvw 10px;  0px text-align: center; padding-right: 70px; padding-left: 70px; padding-top:30px;"; > 
+                
                     <div style= " text-align: center;">
                         <h1>Create Meeting!</h1>
                         <!--cancel button-->
@@ -37,15 +86,15 @@
                     </div>
                     <form method= "post" action= "meeting_action.php" name= "register_form" id= "register_form"> 
 
-                    <label>Title</label><br>
-                    <input type= "text" name= "meeting_title" id= "meeting_title"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+                      <label style= "filter:none;">Title</label><br>
+                      <input type= "text" name= "meeting_title" id= "meeting_title"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
   
 
                       <label>Description</label><br>
                       <input type= "text" name= "description" id= "description"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
                         
 
-                      <label>Venue</label>
+                      <label>Venue</label><br>
                       <input type= "text" name= "venue" id= "venue"required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
 
 
@@ -54,27 +103,37 @@
                       <input type= "date" name= "date" id= "date" required style= "width: 441px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
               
                       <label>Start Time</label>
-                      <input type= "time" name= "start_time" id= "start_time"  required style= "width: 139px; height: 52px; border-radius: 10px; border: solid black; text-align: center;">
+                      <input type= "time" name= "start_time" id= "start_time"  required style= "width: 136px; height: 52px; border-radius: 10px; border: solid black; text-align: center;">
               
                       <label style="left:10px">End Time</label>
-                      <input type= "time"  name= "end_time" id= "end_time" required style= "width: 139px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
+                      <input type= "time"  name= "end_time" id= "end_time" required style= "width: 136px; height: 52px; border-radius: 10px; border: solid black; text-align: center;"><br><br>
               
               
-                      <input  id= "submit-btn" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: rgba(0, 0, 0, 0.778); color:rgba(255, 255, 255, 0.873)"><br><br>
+                      <input  id= "submit-btn" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: black; color:rgba(255, 255, 255, 0.873)"><br><br>
                     </form> 
               
                   </div>
 
             </div>
+
+            
+
+
             </div>
+            
+            <!--form end-->
+
+
+            
 
 
     
-
+     
     </body>
 
     <!--function for popup-->
     <script>
+        
         function showPopUp(){
             var divId = document.getElementById("popup");
 
@@ -88,5 +147,12 @@
             if (divId.style.display === "block" ) {
             divId.style.display = "none";}
         }
+
+    
+
+
+
+     
+
     </script>
 </html>
