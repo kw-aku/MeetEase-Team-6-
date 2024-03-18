@@ -3,6 +3,7 @@
 session_start();
 include "connections.php";
 global $conn;
+global $admin_role_id;
 $admin_role_id= 1;
 
 if (isset($_POST['submit'])) {
@@ -23,12 +24,14 @@ if (isset($_POST['submit'])) {
         //Fetching password from record
         $hashedPasswordFromDb = $fetchedRecord['password'];
         $user_id= $fetchedRecord['id'];
+        $role_id= $fetchedRecord['role_id'];
 
      
         if ($fetchedRecord['role_id']== $admin_role_id && $password == $hashedPasswordFromDb){
             echo "Password verified. Login successful.";
 
             $_SESSION['user_id'] = $user_id;
+            $_SESSION['role_id']= $role_id;
             
 
             header("Location: adminpage.php");

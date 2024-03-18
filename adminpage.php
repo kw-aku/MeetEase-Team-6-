@@ -1,3 +1,15 @@
+<?php 
+include "login_action.php";
+global $admin_role_id;
+session_start();
+/**Redirects user to login page if the user has no session or no admin permissions*/
+if (!isset($_SESSION['user_id']) || $_SESSION['role_id']!= $admin_role_id){
+    header("Location: loginpage.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
