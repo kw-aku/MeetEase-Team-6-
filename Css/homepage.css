@@ -34,6 +34,11 @@ a{
     transition: .3s;
     padding-left: 4em;
     cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    
+    
 }
 
 #logout-btn:hover{

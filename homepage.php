@@ -1,3 +1,13 @@
+<?php 
+include "connections.php";
+session_start();
+/**Redirects user to login page if the user has no session*/
+if (!isset($_SESSION['user_id'])){
+    header("Location: loginpage.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +23,10 @@
 
         <div id="left-side-content">
             <p id="team-logo">[ ] MeetEase</p>
-            <a href="loginpage.php"><p id="logout-btn">Logout &#8617 </p></a>
+            <!-- <a href="loginpage.php"><p id="logout-btn" >Logout &#8617 </p></a> -->
+            <form style= "background-color: black;" action= "logout_action.php" name="logout_button_form" id= "logout_button_form" method= "post">
+                <input type= "submit" id="logout-btn" name= "logout_button" value= "Logout &#8617">
+            </form>
         </div>
         
         <div id="right-side-content; " >
