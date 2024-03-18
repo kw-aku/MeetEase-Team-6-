@@ -9,6 +9,11 @@ input:hover{
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 #left-side-content{
     float: left;
@@ -103,58 +108,29 @@ input:hover{
 }
 
 
-
-
-
-/*css for the table*/
-table {
-    
-    text-align: center; 
-    border-collapse: collapse;    
-    /* border: 1px solid black; */
-    border-radius: 7px;
-
-    
-
-      
+/* css for the table*/
+table{
+    position: relative;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 2em;
+    margin-left: 10em;
+    left: 4em;
+    top: 2em;
 }
 
+th,td{
+    border: 2px solid black;
+    padding: .6em;
+}
 
 td{
-    
-    padding: 20px;
-    max-width: 250px;
-    overflow: auto; 
-    max-height: 50px;
-    white-space: nowrap;
-    background-color: rgb(255, 255, 255);
-    /* border: 2px solid black; */
-
+    text-indent: 4em;
 }
 
-tr{
-    border: 2px solid black;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    
-    
-
+tr:nth-child(even){
+    background-color: #D9D9D9;
 }
-
-
-#meeting_table {
-    position: fixed;
-    padding: 40px;
-    
-    margin-left: 400px;
-    margin-top: 10dvh;
-    margin-right: 10px;
-    border: 4px solid black;
-    border-radius: 14px;
-
-}
-
 
 
 
