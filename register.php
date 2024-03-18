@@ -23,7 +23,7 @@
                     </div>
     
                     <div id="content-two">
-                        <input type="email" id="email" placeholder="Email" name="email" required>
+                        <input type="email" id="email" placeholder="Email" name="email" pattern="[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}" required>
                         <input type="password" id="password" placeholder="Password" name="password" required>
                     </div>
                 </div>

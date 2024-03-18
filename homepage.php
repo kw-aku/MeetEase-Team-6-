@@ -30,6 +30,7 @@ if (!isset($_SESSION['user_id'])){
         </div>
         
         <div id="right-side-content; " >
+            <h id= page-heading>Meetings</h>
             <button onclick="showPopUp()" type="button" id="create-btn" style= "border-radius: 7px;">Create &#43</button><br><br>
             
             <table style="z-index: -1;"> <!--bring to back-->
@@ -119,16 +120,27 @@ if (!isset($_SESSION['user_id'])){
             <!--form for updating-->
             
             <form id="formUpdate" action="update_meetings_action.php" method="post" style="display:none; position:relative; width: 30em; height:15em; border:2px solid black; 
-                background-color:white; left: 30em;"> 
+                background-color:white; border-radius:14px; left: 650px; box-shadow: 0px 0px 90px 1px;"> 
                 <p  onclick="hidePopUpUpdate_Cancel()" style="position:absolute; left: 16em; font-size:26px; cursor:pointer;">&times</p>
                
                 <input type="hidden" id="hidden-element" name="id">
+                <!-- <div>
+                <label>Start Time</label>
+                <input type= "time" name= "start_time" id= "start_time"  required style= "width: 136px; height: 52px; border-radius: 10px; border: solid black;margin-right:10px;">
+              
+                <label style="left:10px">End Time</label>
+                <input type= "time"  name= "end_time" id= "end_time" required style= "width: 136px; height: 52px; border-radius: 10px; border: solid black;;"><br><br>
 
+                <input  id= "submit-btn" type= "submit" name= "submit_meeting"  id= "submit_meeting" value= "Submit" style= "width: 441px; height: 52px; border-radius: 7px; border: solid black; background-color: black; color:rgba(255, 255, 255, 0.873)"><br><br>
+                </div> -->
+                <div >
+                <label style="left:100px; ">Start Time</label><br>
                 <input type="time" id="start_time" name="start_time" style="position:relative; width: 10em; height: 52px; 
-                border-radius: 10px; border: solid black; right: 20em; top:5em;">
-
+                border-radius: 10px; border: solid black; right: 20em; top:10em; ">
+                <label>End Time</label><br>
                 <input type="time" id="end_time" name="end_time" style="position:relative; width: 10em; height: 52px; 
                 border-radius: 10px; border: solid black; right: 5em; bottom:.5em;">
+                <div>
 
                 <input type="submit" name="submit" id="submit" value="Submit" style="position:relative; width: 10em; 
                 height: 52px; border-radius: 10px; border: solid black; right: 10em; top:2em;">

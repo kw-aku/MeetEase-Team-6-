@@ -15,7 +15,7 @@
             <form action= "login_action.php" method= "POST">
                 <p class="Inter" id="txt"> Welcome Back! </p>
                 <p class="Inter" id="para-title-txt"> Please login into your account </p>
-                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="email" id="email" placeholder="Email" name="email" pattern="[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}" required>
                 <input type="password" id="password" placeholder="Password" name="password" required>
                 <input type="submit" id="submit" name="submit" value="Login">
                 <p id="footer-txt-left">Do you have an account yet?&nbsp&nbsp
